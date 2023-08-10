@@ -15,7 +15,7 @@ const argv = require('yargs')
             alias: 'hasta',
             type: 'number',
             default: 10,
-            describe: 'Limite del numero por el que sera multiplicado'
+            describe: 'Limite hasta donde quieres que llegue la tabla'
         })
         .check((argv, options)=>{
             if( isNaN( argv.b ) ){
